@@ -1,17 +1,25 @@
-# Swap
+# for mac
+
+## Mac Finder meta file
+.DS_Store
+
+
+# for vim
+
+## Swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
-# Session
+## Session
 Session.vim
 
-# Temporary
+## Temporary
 .netrwhist
 *~
-# Auto-generated tag files
+## Auto-generated tag files
 tags
-# Persistent undo
+## Persistent undo
 [._]*.un~
