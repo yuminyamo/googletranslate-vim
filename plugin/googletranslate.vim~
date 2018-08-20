@@ -18,6 +18,8 @@ if !exists('g:googletranslate_locale')
   let g:googletranslate_locale = substitute(v:lang, '^\([a-z]*\).*$', '\1', '')
 endif
 
+let s:endpoint = 'https://script.google.com/macros/s/AKfycbz6jrtJGqZtwMyJgnzwK7qoXAhWS6s860B01hwNotSoMTDk8GHn/exec'
+
 function! s:CheckLang(word)
   let all = strlen(a:word)
   let eng = strlen(substitute(a:word, '[^\t -~]', '', 'g'))
