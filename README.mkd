@@ -22,6 +22,38 @@
     :Trans
   alias for :GoogleTranslate
 
+### Prerequisite
+
+  - mattn/webapi-vim
+
+  - Prepare own translation service which has following interface. 
+    
+    - request format  
+
+          https://xxxxx/q=<text>&from=<lang>&to=<lang>
+
+    - result format  
+      json format only including translated text,  
+      e.g. 
+      
+          ""translated text""
+
+    - minimal example of the translation service  
+      Use Goole Apps Script and LanguageApp#translate api.
+
+      ```example.gs
+      function doGet(e) {
+        var p = e.parameter;
+        var translatedText = LanguageApp.translate(p.q, p.from, p.to);
+        return ContentService.createTextOutput(JSON.stringify(translatedText)).setMimeType(ContentService.MimeType.JSON);
+      }
+      ```
+
+  - Set the translation service endpoint to g:googletranslate_endpoint,  
+    e.g. 
+
+        let g:googletranslate_endpoint = "https://xxxxx"
+
 ### See Also
   - <http://www.vim.org/scripts/script.php?script_id=2609>
   - <http://www.vim.org/scripts/script.php?script_id=2996>
