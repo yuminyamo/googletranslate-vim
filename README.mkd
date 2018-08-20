@@ -38,7 +38,7 @@
       
           ""translated text""
 
-    - minimal example of the translation service  
+    - minimal example of the translation service to satisfy the above conditions  
       Use Goole Apps Script and LanguageApp#translate api.
 
       ```example.gs
