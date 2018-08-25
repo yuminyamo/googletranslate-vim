@@ -49,6 +49,9 @@
       }
       ```
 
+      see also  
+      https://qiita.com/tanabee/items/c79c5c28ba0537112922
+
   - Set the translation service endpoint to g:googletranslate_endpoint,  
     e.g. 
 
